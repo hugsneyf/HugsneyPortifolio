@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Hugsney - Portfolio website</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">Hugsney</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li>
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
+
+                  <li>
+                     <a href="#info" class="nav__link">My Info</a>
+                  </li>
+
+                  <li>
+                     <a href="#work" class="nav__link">Work</a>
+                  </li>
+
+                  <li>
+                     <a href="#services" class="nav__link">Graduation</a>
+                  </li>
+   
+                  <li>
+                     <a href="#contact" class="nav__link">Contact Me</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+      
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <!-- Insert your profile image (rectangular ratio 220 x 350, 550 x 860...) -->
+               <img src="assets/img/home-perfil.png" alt="image" class="home__img">
+
+               <div class="home__data">
+                  <h1 class="home__name">Hugsney <br> Ferreira</h1>
+                  <h3 class="home__profession">Data Scientist</h3>
+               </div>
+
+               <a href="#work" class="home__scroll">
+                  <div class="home__scroll-box">
+                     <i class="ri-arrow-down-line"></i>
+                  </div>
+
+                  <span class="home__scroll-text">Recent Works</span>
+               </a>
+            </div>
+         </section>
+<!--==================== INFO ====================-->
+<section class="info section" id="info">
+   <h2 class="section__title">MY INFO</h2>
+
+   <div class="info__container container grid">
+      <!-- ABOUT -->
+      <div class="about grid">
+         <div class="about__content">
+            <h3 class="info__title">About Me</h3>
+            <p class="about__description">
+               
+               Passionate about <b>data analysis</b> with over 9 years of experience 
+               and 3 years using <b>Python, SQL, and Excel</b>. Skilled in 
+               <b>automating tasks</b> and <b>dashboard design</b>, currently pursuing a 
+               Data Science degree.
+               
+            </p>
+            <!-- Insert your CV -->
+            <a href="assets/pdf/Hugsney_Ferreira - Resume.pdf" download="" target="_blank" class="button about__button">Download CV</a>
+         </div>
+
+         <!-- Insert your profile image (rectangular ratio 250 x 350, 450 x 620...) -->
+         <img src="assets/img/info-perfil.png" alt="image" class="about__img">
+      </div>
+
+      <!-- EXPERIENCE -->
+      <div class="experience">
+         <h3 class="info__title">Experience</h3>
+
+         <div class="experience__content grid">
+            <div class="experience__data grid">
+               <h2 class="experience__company">Group Nexus</h2>
+
+               <div>
+                  <h3 class="experience__profession">Data Analyst</h3>
+                  <span class="experience__date">02/23 - Present</span>
+                  <p class="experience__description">
+                     Developed automation scripts using Python, to streamline processes, 
+                     saving significant time and improving accuracy. Automated dashboards, 
+                     and migrated data for enhanced reporting and visualisation.
+                  </p>
+               </div>
+            </div>
+
+            <div class="experience__data grid">
+               <h2 class="experience__company">Health Vision</h2>
+
+               <div>
+                  <h3 class="experience__profession">Compliance Officer</h3>
+                  <span class="experience__date">09/21 - 01/23</span>
+                  <p class="experience__description">
+                     Supported a team of 400 carers, analysed healthcare data with Python and SQL, 
+                     automated reporting, and improved efficiency through process optimisation. 
+                  </p>
+               </div>
+            </div>
+
+            <div class="experience__data grid">
+               <h2 class="experience__company">CSC Algar</h2>
+
+               <div>
+                  <h3 class="experience__profession">Financial Data Analyst</h3>
+                  <span class="experience__date">01/20 - 03/21</span>
+                  <p class="experience__description">
+                     Reduced travel expenses by 100k monthly, automated reports saving 3 hours daily, 
+                     delivered training, implemented VBA macros, conducted audits, improved team efficiency, 
+                     and collaborated on risk mitigation.  
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="skills">
+         <h3 class="info__title">Skills</h3>
+         <div class="skills__content grid">
+            <!-- Find more logos at: https://worldvectorlogo.com/ - https://svgl.app/ -->
+
+            <div class="skills__box">
+               <img src="assets/img/1.info-python.svg" alt="image" class="skills__img">
+               <span class="skills__name">Python</span>
+            </div>
+
+            <div class="skills__box">
+               <img src="assets/img/2.info-pandas.svg" alt="image" class="skills__img">
+               <span class="skills__name">Pandas</span>
+            </div>
+
+            <div class="skills__box">
+               <img src="assets/img/3.info-selenium.png" alt="image" class="skills__img">
+               <span class="skills__name">Selenium</span>
+            </div>
+
+            <div class="skills__box">
+               <img src="assets/img/4.info-excel.svg" alt="image" class="skills__img">
+               <span class="skills__name">Excel</span>
+            </div>
+
+            <div class="skills__box">
+               <img src="assets/img/5.info-tableau.svg" alt="image" class="skills__img">
+               <span class="skills__name">Tableau</span>
+            </div>
+
+            <div class="skills__box">
+               <img src="assets/img/6.info-github.svg" alt="image" class="skills__img">
+               <span class="skills__name">GitHub</span>
+            </div>
+
+            <div class="skills__box">
+               <img src="assets/img/7.info-html.svg" alt="image" class="skills__img">
+               <span class="skills__name">HTML</span>
+               
+            </div>
+
+            <div class="skills__box">
+               <img src="assets/img/8.info-css.svg" alt="image" class="skills__img">
+               <span class="skills__name">CSS</span>
+            </div>
+
+            <div class="skills__box">
+               <img src="assets/img/9.info-javascript.svg" alt="image" class="skills__img">
+               <span class="skills__name">JavaScript</span>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+         <!--==================== WORKS ====================-->
+         <section class="work section" id="work">
+            <h2 class="section__title">RECENT WORKS</h2>
+            
+            <div class="work__container container grid">
+               <article class="work__card">
+                  <a href="https://www.hyperiondev.com/portfolio/192853/" target="_blank" class="work__link">
+                     <h2 class="work__title">Software Engineering</h2>
+                     <p class="work__description">
+                        Ranked 1st out of 310 top-performing students at Imperial College in London.
+                     </p>
+   
+                     <img src="assets/img/work-3.jpg" alt="image" class="work__img">
+
+                     <i class="ri-arrow-right-line"></i>
+                  </a>
+               </article>
+               
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <h2 class="work__title">Data Analysis</h2>
+                     <p class="work__description">
+                        Using Python's tools for transforming, web scraping, 
+                        manipulating, and visualizing datasets.
+                     </p>
+                     
+                     <!-- Insert the images of your projects (rectangular ratio 640 x 425...) -->
+                     <img src="assets/img/work-1.jpg" alt="image" class="work__img">
+
+                     <i class="ri-arrow-right-line"></i>
+                  </a>
+               </article>
+
+               <article class="work__card">
+                  <a href="assets/pdf/Dashboard Example.xlsx" target="_blank" class="work__link">
+                     <h2 class="work__title">Interative Dashboards</h2>
+                     <p class="work__description">
+                        Showcasing real-time data insights, 
+                        allowing dynamic exploration and analysis in this portfolio.
+                     </p>
+   
+                     <img src="assets/img/work-2.jpg" alt="image" class="work__img">
+
+                     <i class="ri-arrow-right-line"></i>
+                  </a>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://titan.dcs.bbk.ac.uk/~hfabio01/travel-guide/home.html" target="_blank" class="work__link">
+                     <h2 class="work__title">Frontend Project - Travel Guide</h2>
+                     <p class="work__description">
+                        University project focused on building an informative website for an academic proposal.
+                     </p>
+   
+                     <img src="assets/img/work-5.jpg" alt="image" class="work__img">
+
+                     <i class="ri-arrow-right-line"></i>
+                  </a>
+               </article>
+            </div>
+         </section>
+
+         
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section" id="services">
+            <h2 class="section__title">GRADUATION</h2>
+
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <i class=" services__icon"></i>
+                  
+                  <h3 class="services__title">Data Science and Computing</h3>
+                  <p class="services__description">
+                     Birkbeck, University of London – UK
+                     <br><h6>Oct 2022-Present</h6>
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <i class=" services__icon"></i>
+
+                  <h3 class="services__title">Software Engineer</h3>
+                  <p class="services__description">
+                     Imperial College London – UK
+                     <br><h6>2023 - 2024</h6>
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <i class=" services__icon"></i>
+
+                  <h3 class="services__title">Bachelor of Business</h3>
+                  <p class="services__description">
+                     University Center of Triangulo - Brazil
+                     <br><h6>2008 – 2013</h6>
+                  </p>
+               </article>
+
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h2 class="section__title">CONTACT ME</h2>
+
+            <div class="contact__container container grid">
+               <form action="" class="contact__form grid" id="contact-form">
+                  <div class="contact__group grid">
+                     <input type="text" name="user_name" placeholder="Names" required class="contact__input">
+                     <input type="email" name="user_email" placeholder="Email" required class="contact__input">
+                  </div>
+
+                  <textarea name="user_message" id="message" placeholder="Message" required class="contact__input contact__area"></textarea>
+
+                  <button type="submit" class="button contact__button">Send Message</button>
+
+                  <p class="contact__message" id="contact-message"></p>
+               </form>
+
+               <div class="contact__social grid">
+                  
+                  
+
+                  <a></a>
+
+                  <a href="https://www.linkedin.com/in/hugsney-ferreira" target="_blank" class="contact__social-link">
+                     <i class="ri-linkedin-box-line"></i>
+                     <span>Linkedin</span>
+                  </a>
+
+                  <a> </a>
+
+                  
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <ul class="footer__links">
+               <li>
+                  <a href="#home" class="footer__link">Home</a>
+               </li>
+
+               <li>
+                  <a href="#work" class="footer__link">Work</a>
+               </li>
+
+               <li>
+                  <a href="#info" class="footer__link">Info</a>
+               </li>
+            </ul>
+
+            <span class="footer__copy">
+               &#169; All Rights Reserved By Hugsney.</a>
+            </span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== EMAIL JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

@@ -1,0 +1,75 @@
+/*=============== HOME ===============*/
+.home{
+   &__container{
+      row-gap: 2rem;
+      padding-top: 1rem;
+   }
+   &__img{
+      width: 220px;
+      justify-self: center;
+      mask-image: linear-gradient(to bottom, 
+                                 hsla(var(--hue), 40%, 16%) 60%, 
+                                 transparent 100%);
+   }
+   &__name{
+      font-size: var(--biggest-font-size);
+      font-weight: var(--font-bold);
+      word-break: break-word;
+      margin-bottom: 1rem;
+   }
+   &__profession{
+      position: relative;
+      font-size: var(--big-font-size);
+      color: var(--text-color);
+
+      &::after{
+         content: '';
+         position: absolute;
+         left: 0;
+         bottom: -.5rem;
+         width: 25%;
+         height: 3px;
+         background-color: var(--text-color);
+      }
+   }
+   &__scroll{
+      color: var(--title-color);
+      display: inline-flex;
+      column-gap: .5rem;
+      align-items: center;
+      justify-self: center;
+      margin-top: 3.5rem;
+
+      &-box{
+         background-color: var(--first-color);
+         width: 32px;
+         height: 32px;
+         display: grid;
+         place-items: center;
+         font-size: 1.5rem;
+         overflow: hidden;
+      }
+      &-text{
+         font-weight: var(--font-semi-bold);
+      }
+      &-box i{
+         animation: scroll-down 3s infinite;
+      }
+   }
+}
+
+/* Animate scroll icon */
+@keyframes scroll-down{
+   0%{
+      transform: translateY(-1rem);
+      opacity: 0;
+   }
+   50%{
+      transform: translateY(0);
+      opacity: 1;
+   }
+   100%{
+      transform: translateY(.6rem);
+      opacity: 0;
+   }
+}
