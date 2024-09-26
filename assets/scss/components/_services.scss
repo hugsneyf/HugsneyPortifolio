@@ -1,0 +1,18 @@
+/*=============== SERVICES ===============*/
+.services{
+   background-color: var(--container-color);
+
+   &__container{
+      row-gap: 2rem;
+   }
+   &__icon{
+      display: block;
+      color: var(--first-color-light);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+   }
+   &__title{
+      font-size: var(--h3-font-size);
+      margin-bottom: .75rem;
+   }
+}

@@ -1,0 +1,104 @@
+/*=============== HEADER & NAV ===============*/
+.header{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   background-color: transparent;
+   z-index: var(--z-fixed);
+}
+
+.nav{
+   position: relative;
+   height: var(--header-height);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   &__logo{
+      color: var(--title-color);
+      font-weight: var(--font-bold);
+   }
+   &__toggle,
+   &__close{
+      font-size: 1.5rem;
+      color: var(--title-color);
+      cursor: pointer;
+   }
+   // Navigation for mobile devices
+   &__menu{
+      @media screen and (max-width: 1150px){
+         position: fixed;
+         top: 0;
+         right: -100%;
+         background-color: hsla(var(--hue), 70%, 4%, .2);
+         backdrop-filter: blur(16px);
+         -webkit-backdrop-filter: blur(16px);
+         width: 80%;
+         height: 100%;
+         padding: 7rem 3rem;
+         transition: right .4s;
+      }
+   }
+   &__list{
+      display: flex;
+      flex-direction: column;
+      row-gap: 3rem;
+   }
+   &__link{
+      position: relative;
+      color: var(--title-color);
+      font-weight: var(--font-semi-bold);
+      transition: color .4s;
+
+      &::after{
+         content: '';
+         width: 0;
+         height: 2px;
+         background-color: var(--first-color-light);
+         position: absolute;
+         left: 0;
+         bottom: -.5rem;
+         transition: width .3s;
+      }
+      &:hover{
+         color: var(--first-color-light);
+      }
+      &:hover::after{
+         width: 30%;
+      }
+   }
+   &__close{
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+   }
+}
+
+/* Show menu */
+.show-menu{
+   right: 0;
+}
+
+/* Add blur header */
+.blur-header::after{
+   content: "";
+   position: absolute;
+   width: 1000%;
+   height: 100%;
+   background-color: hsla(var(--hue), 70%, 4%, .2);
+   backdrop-filter: blur(16px);
+   -webkit-backdrop-filter: blur(16px);
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+
+/* Active link */
+.active-link{
+   color: var(--first-color-light);
+
+   &::after{
+      width: 30%;
+   }
+}

@@ -1,0 +1,63 @@
+/*=============== CONTACT ===============*/
+.contact{
+   &__container{
+      row-gap: 4rem;
+   }
+   &__group,
+   &__form{
+      gap: 1rem;
+   }
+   &__form{
+      position: relative;
+   }
+   &__input{
+      padding: 1.25rem;
+      background-color: var(--container-color);
+      color: var(--title-color);
+      font-weight: var(--font-semi-bold);
+
+      &::placeholder{
+         color: var(--text-color-light);
+      }
+   }
+   &__area{
+      height: 10rem;
+      resize: none;
+   }
+   &__button{
+      margin-top: 1rem;
+      cursor: pointer;
+   }
+   &__social{
+      grid-template-columns: repeat(2, max-content);
+      justify-content: center;
+      column-gap: 3rem;
+
+      &-link{
+         color: var(--title-color);
+         display: inline-flex;
+         column-gap: .25rem;
+         align-items: center;
+         transition: color .4s;
+         
+         & i{
+            font-size: 1.5rem;
+         }
+         & span{
+            font-size: var(--small-font-size);
+            font-weight: var(--font-semi-bold);
+         }
+         &:hover{
+            color: var(--first-color-light);
+         }
+      }
+   }
+   &__message{
+      position: absolute;
+      left: 0;
+      bottom: -2rem;
+      font-size: var(--small-font-size);
+      font-weight: var(--font-semi-bold);
+      color: var(--title-color);
+   }
+}
