@@ -43,6 +43,7 @@ const contactForm = document.getElementById('contact-form'),
 const sendEmail = (e) => {
    e.preventDefault()
    
+   // https://dashboard.emailjs.com/admin
    // serviceID - templateID - #form - publicKey
    emailjs.sendForm('service_3xwk70d', 'template_6f9b6xg', '#contact-form', 'ezShkVbOM93HNSVzK')
       .then(() => {

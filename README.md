@@ -33,28 +33,3 @@ Lists my academic qualifications, including degrees in Data Science, Software En
 5. Contact Me
 A form where users can input their name, email, and a message to contact me. Includes a link to my LinkedIn profile for professional networking.
 Installation & Setup
-
------
-To view the project locally:
-1. Clone this repository:
-git clone https://github.com/yourusername/portfolio-website.git
-
-2. Navigate to the project folder:
-cd portfolio-website
-
-3. Open index.html in your browser to view the website.
-
------
-Customisation
-- Images: Replace the images in the assets/img/ folder with your own for a personalised look.
-- Content: Modify the HTML to include your own information, work experience, and projects.
-- Styles: You can update the styles.css file in the assets/css/ folder to customise the design.
-
------
-Credits
-- Remixicon for the icons used in the navigation and throughout the website.
-- ScrollReveal for smooth animations.
-
------
-License
-This project is open source and available under the MIT License.
