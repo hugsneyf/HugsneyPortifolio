@@ -44,7 +44,7 @@ const sendEmail = (e) => {
    e.preventDefault()
    
    // serviceID - templateID - #form - publicKey
-   emailjs.sendForm('service_3xwk70d', 'template_6f9b6xg', '#contact-form', 'ezShkVbOM93HNSVzK')
+   emailjs.sendForm('service_g36wlvs', 'template_6f9b6xg', '#contact-form', 'ezShkVbOM93HNSVzK')
       .then(() => {
          // Show sent message
          contactMessage.textContent = 'Message sent successfully ✅'
@@ -110,5 +110,6 @@ sr.reveal(`.home__scroll`, {delay: 800})
 sr.reveal(`.work__card, .services__card`, {interval: 100})
 sr.reveal(`.about__content`, {origin: 'right'})
 sr.reveal(`.about__img`, {origin: 'left'})
+
 
 
